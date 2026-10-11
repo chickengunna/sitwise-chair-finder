@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sitwise — Chair Finder</title>
+<meta name="description" content="Answer a few questions and find the office chair that fits how you sit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="stage" class="stage">
+  <div id="grid" class="grid"></div>
+</main>
+
+<section id="welcome" class="welcome" hidden>
+  <div id="ring" class="ring"></div>
+  <div class="welcome-copy">
+    <p class="brand" id="brand"></p>
+    <h1 id="welcomeTitle"></h1>
+    <p id="welcomeSub"></p>
+    <a id="startBtn" class="btn" href="#/q/sitting-time"></a>
+  </div>
+</section>
+
+<div id="tip" class="tip" role="tooltip" hidden></div>
+
+<aside id="panel" class="panel" hidden aria-live="polite"></aside>
+
+<button id="moreBtn" class="more" aria-label="Show footer links" aria-expanded="false"><span></span><span></span><span></span></button>
+<div id="menu" class="menu" hidden></div>
+
+<aside id="drawer" class="drawer" aria-hidden="true"></aside>
+<div id="scrim" class="scrim"></div>
+
+<script src="data.js"></script>
+<script src="chair-svg.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
